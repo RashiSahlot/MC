@@ -1,0 +1,27 @@
+// swapping of numbers without using temporary integer can be done in 2 ways.
+
+// 1st way  Using + & -. 
+#include<stdio.h>
+int main()
+{
+	int a=20,b=30;                                             //Declaration and assignation of values.
+    printf("Before swaping of numbers, a=%d n b=%d",a,b);      
+    a=a+b;                                                     // (20+30)    i.e. a=50
+    b=a-b;                                                     // (50-30)    i.e. b=20
+    a=a-b;                                                     // (50-20)    i.e. a=30
+    printf("\nAfter swapping of numbers, we have a=%d n b=%d",a,b);    
+    return 0;  
+} 
+
+// 2nd way Using * & /.
+#include<stdio.h>  
+ int main() 
+{    
+    int a=100, b=200;      
+    printf("Before swapping of numbers, we were having a=%d b=%d",a,b);       
+    a=a*b;                                                    // (100*200)      i.e. a=20000  
+    b=a/b;                                                    // (20000/200)    i.e. b=100
+    a=a/b;                                                    // (20000/100)    i.e. a=200
+    printf("\nAfter swapping of numbers, we got a=%d b=%d",a,b);       
+    return 0;  
+}
