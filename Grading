@@ -1,0 +1,19 @@
+//Program for Grade calculation.
+#include<stdio.h>
+main()
+{
+	int marks;                                 //Declaration of varaible marks.
+	printf("Enter obtained marks of student: ");
+	scanf("%d",&marks);
+	if(marks>=85)
+	{printf("Student got Grade A.");}
+	else if(marks>=70)
+	{printf("Student got Grade B.");}
+	else if(marks>=55)
+	{printf("Student got Grade C.");}
+    else if(marks>=40)
+	{printf("Student got Grade D.");}
+	else
+	{printf("Student got Grade F.");}
+	return 0;
+}
